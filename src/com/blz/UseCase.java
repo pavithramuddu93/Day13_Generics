@@ -1,24 +1,27 @@
 package com.blz;
 
+
 public class UseCase {
     public static void main(String[] args) {
 
-        Integer xint = 65, yint = 85, zint = 22;
-        UseCase.compute(xint, yint, zint);
-        Float xf = 9.7f, yf = 17.66f, zf = 55.5f;
-        UseCase.compute(xf, yf, zf);
-        String xs = "Pear", ys = "Apple", zs = "Orange";
-        UseCase.compute(xs, ys, zs);
-    }
+        // Integer xint = 65, yint = 85, zint = 22;
+        Float xf = 9.7f, yf=17.66f, zf = 5.5f;
+//        int max = xint;
+//        if (yint.compareTo(max) > 0) {
+//            max = yint;
+//        }
+//        if (zint.compareTo(max) > 0) {
+//            max = zint;
+//        }
+//        System.out.println(max + " is max number");
+        float max = xf;
+        if (yf.compareTo(max) > 0) {
+            max = yf;
+        }
+        if (zf.compareTo(max) > 0) {
+            max = zf;
+        }
+        System.out.println(max + " is max number");
 
-    public static <T extends Comparable<T>> void compute(T x, T y, T z) {
-        T max = x;
-        if (y.compareTo(max) > 0) {
-            max = y;
-        }
-        if (z.compareTo(max) > 0) {
-            max = z;
-        }
-        System.out.println(max + " is maximum");
     }
 }
