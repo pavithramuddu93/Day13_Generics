@@ -1,4 +1,5 @@
 package com.blz;
+
 public class Main<T> {
     T Array[];
 
