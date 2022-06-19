@@ -1,4 +1,5 @@
 package com.blz;
+
 public class Class_Work<T extends Comparable<T>> {
     T x;
     T y;
